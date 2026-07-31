@@ -113,6 +113,11 @@
   }
   .card .brand{ font-family:'Fraunces', serif; font-weight:600; font-size:15px; color:var(--foil-bright); line-height:1.2; margin-bottom:2px; }
   .card .product{ font-size:12px; color:var(--cream); line-height:1.4; margin-bottom:10px; min-height:34px; }
+  .card .self-badge{
+    position:absolute; top:14px; left:14px;
+    font-size:13px; line-height:1;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.5));
+  }
   .card .pct-stamp{
     position:absolute; top:14px; right:12px; font-family:'IBM Plex Mono', monospace; font-size:10.5px;
     font-weight:600; color:var(--bg); background:var(--foil-bright); padding:3px 7px; border-radius:6px;
@@ -239,7 +244,7 @@
   </div>
 </div>
 
-<footer>ARCHIVE COMPILED FROM ORDER HISTORY · 78 ITEMS<br>07 / 2026</footer>
+<footer>ARCHIVE COMPILED FROM ORDER HISTORY · 73 ITEMS<br>07 / 2026</footer>
 
 <script>
 const DATA = [
@@ -257,7 +262,8 @@ const DATA = [
       "单一产地控"
     ],
     "type": "classic",
-    "price": "¥76"
+    "price": "¥76",
+    "selfUse": false
   },
   {
     "country": "越南",
@@ -273,7 +279,8 @@ const DATA = [
       "香料控"
     ],
     "type": "adventure",
-    "price": "¥79"
+    "price": "¥79",
+    "selfUse": false
   },
   {
     "country": "越南",
@@ -288,7 +295,8 @@ const DATA = [
       "入门黑巧爱好者"
     ],
     "type": "classic",
-    "price": "¥72"
+    "price": "¥72",
+    "selfUse": false
   },
   {
     "country": "挪威",
@@ -304,7 +312,8 @@ const DATA = [
       "咸甜控"
     ],
     "type": "adventure",
-    "price": "¥92.92"
+    "price": "¥92.92",
+    "selfUse": false
   },
   {
     "country": "巴西",
@@ -320,7 +329,8 @@ const DATA = [
       "果酸党"
     ],
     "type": "classic",
-    "price": "¥122.73"
+    "price": "¥122.73",
+    "selfUse": false
   },
   {
     "country": "葡萄牙",
@@ -335,7 +345,8 @@ const DATA = [
       "乳制品猎奇党"
     ],
     "type": "dairy",
-    "price": "¥66.64"
+    "price": "¥66.64",
+    "selfUse": false
   },
   {
     "country": "葡萄牙",
@@ -351,7 +362,8 @@ const DATA = [
       "白巧爱好者"
     ],
     "type": "dairy",
-    "price": "¥66.64"
+    "price": "¥66.64",
+    "selfUse": false
   },
   {
     "country": "葡萄牙",
@@ -366,7 +378,8 @@ const DATA = [
       "无糖健康党"
     ],
     "type": "dairy",
-    "price": "¥66.64"
+    "price": "¥66.64",
+    "selfUse": false
   },
   {
     "country": "奥地利",
@@ -382,7 +395,8 @@ const DATA = [
       "送礼首选"
     ],
     "type": "adventure",
-    "price": "¥229.35"
+    "price": "¥229.35",
+    "selfUse": false
   },
   {
     "country": "意大利",
@@ -397,7 +411,8 @@ const DATA = [
       "产地对比测评党"
     ],
     "type": "classic",
-    "price": "¥82.16"
+    "price": "¥82.16",
+    "selfUse": false
   },
   {
     "country": "意大利",
@@ -412,7 +427,8 @@ const DATA = [
       "产地对比测评党"
     ],
     "type": "classic",
-    "price": "¥82.15"
+    "price": "¥82.15",
+    "selfUse": false
   },
   {
     "country": "意大利",
@@ -427,7 +443,8 @@ const DATA = [
       "硬核黑巧爱好者"
     ],
     "type": "classic",
-    "price": "¥82.15"
+    "price": "¥82.15",
+    "selfUse": false
   },
   {
     "country": "加拿大",
@@ -443,7 +460,8 @@ const DATA = [
       "牛奶巧党"
     ],
     "type": "dairy",
-    "price": "¥112.5"
+    "price": "¥112.5",
+    "selfUse": true
   },
   {
     "country": "加拿大",
@@ -458,7 +476,8 @@ const DATA = [
       "乳制品猎奇党"
     ],
     "type": "dairy",
-    "price": "¥112.5"
+    "price": "¥112.5",
+    "selfUse": true
   },
   {
     "country": "加拿大",
@@ -474,7 +493,8 @@ const DATA = [
       "猎奇党"
     ],
     "type": "adventure",
-    "price": "¥121.5"
+    "price": "¥121.5",
+    "selfUse": false
   },
   {
     "country": "加拿大",
@@ -489,7 +509,8 @@ const DATA = [
       "可可品种控"
     ],
     "type": "classic",
-    "price": "¥98.20"
+    "price": "¥98.20",
+    "selfUse": false
   },
   {
     "country": "加拿大",
@@ -504,7 +525,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥101"
+    "price": "¥101",
+    "selfUse": false
   },
   {
     "country": "加拿大",
@@ -519,7 +541,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥87.3"
+    "price": "¥87.3",
+    "selfUse": false
   },
   {
     "country": "加拿大",
@@ -534,7 +557,8 @@ const DATA = [
       "烟熏风味猎奇党"
     ],
     "type": "adventure",
-    "price": "¥143.1"
+    "price": "¥143.1",
+    "selfUse": false
   },
   {
     "country": "加拿大",
@@ -549,7 +573,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥84.98"
+    "price": "¥84.98",
+    "selfUse": true
   },
   {
     "country": "加拿大",
@@ -564,7 +589,8 @@ const DATA = [
       "复合香料探索党"
     ],
     "type": "adventure",
-    "price": "¥110"
+    "price": "¥110",
+    "selfUse": false
   },
   {
     "country": "加拿大",
@@ -579,7 +605,8 @@ const DATA = [
       "硬核黑巧爱好者"
     ],
     "type": "classic",
-    "price": "¥88"
+    "price": "¥88",
+    "selfUse": false
   },
   {
     "country": "泰国",
@@ -595,7 +622,8 @@ const DATA = [
       "东南亚产地控"
     ],
     "type": "dairy",
-    "price": "¥91.8"
+    "price": "¥91.8",
+    "selfUse": false
   },
   {
     "country": "泰国",
@@ -610,7 +638,8 @@ const DATA = [
       "限定款收藏党"
     ],
     "type": "classic",
-    "price": "¥108"
+    "price": "¥108",
+    "selfUse": false
   },
   {
     "country": "泰国",
@@ -625,7 +654,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥96"
+    "price": "¥96",
+    "selfUse": true
   },
   {
     "country": "泰国",
@@ -640,7 +670,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥96"
+    "price": "¥96",
+    "selfUse": true
   },
   {
     "country": "意大利",
@@ -655,7 +686,8 @@ const DATA = [
       "坚果风味党"
     ],
     "type": "adventure",
-    "price": "¥74.1"
+    "price": "¥74.1",
+    "selfUse": false
   },
   {
     "country": "法国",
@@ -670,7 +702,8 @@ const DATA = [
       "单源产地控"
     ],
     "type": "classic",
-    "price": "¥112"
+    "price": "¥112",
+    "selfUse": true
   },
   {
     "country": "法国",
@@ -685,7 +718,8 @@ const DATA = [
       "坚果风味党"
     ],
     "type": "adventure",
-    "price": "¥109.28"
+    "price": "¥109.28",
+    "selfUse": false
   },
   {
     "country": "法国",
@@ -700,7 +734,8 @@ const DATA = [
       "单源产地控"
     ],
     "type": "classic",
-    "price": "¥109.28"
+    "price": "¥109.28",
+    "selfUse": false
   },
   {
     "country": "法国",
@@ -715,7 +750,8 @@ const DATA = [
       "无糖健康党"
     ],
     "type": "classic",
-    "price": "¥104.44"
+    "price": "¥104.44",
+    "selfUse": false
   },
   {
     "country": "法国",
@@ -731,7 +767,8 @@ const DATA = [
       "果酸党"
     ],
     "type": "classic",
-    "price": "¥74.8"
+    "price": "¥74.8",
+    "selfUse": false
   },
   {
     "country": "法国",
@@ -746,7 +783,8 @@ const DATA = [
       "单源产地控"
     ],
     "type": "classic",
-    "price": "¥77.4"
+    "price": "¥77.4",
+    "selfUse": false
   },
   {
     "country": "法国",
@@ -761,7 +799,8 @@ const DATA = [
       "名庄珍稀豆收藏党"
     ],
     "type": "rare",
-    "price": "¥97.2"
+    "price": "¥97.2",
+    "selfUse": true
   },
   {
     "country": "泰国",
@@ -776,7 +815,8 @@ const DATA = [
       "重口味猎奇党"
     ],
     "type": "adventure",
-    "price": "¥118.22"
+    "price": "¥118.22",
+    "selfUse": false
   },
   {
     "country": "泰国",
@@ -791,7 +831,8 @@ const DATA = [
       "东南亚风味猎奇党"
     ],
     "type": "adventure",
-    "price": "¥118.22"
+    "price": "¥118.22",
+    "selfUse": false
   },
   {
     "country": "泰国",
@@ -806,7 +847,8 @@ const DATA = [
       "东南亚产地入门党"
     ],
     "type": "dairy",
-    "price": "¥48.61"
+    "price": "¥48.61",
+    "selfUse": false
   },
   {
     "country": "泰国",
@@ -821,7 +863,8 @@ const DATA = [
       "东南亚产地入门党"
     ],
     "type": "dairy",
-    "price": "¥48.62"
+    "price": "¥48.62",
+    "selfUse": true
   },
   {
     "country": "泰国",
@@ -836,7 +879,8 @@ const DATA = [
       "重口味猎奇党"
     ],
     "type": "adventure",
-    "price": "¥50.14"
+    "price": "¥50.14",
+    "selfUse": false
   },
   {
     "country": "俄罗斯",
@@ -851,7 +895,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥48.1"
+    "price": "¥48.1",
+    "selfUse": false
   },
   {
     "country": "俄罗斯",
@@ -866,7 +911,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥56.4"
+    "price": "¥56.4",
+    "selfUse": false
   },
   {
     "country": "俄罗斯",
@@ -882,7 +928,8 @@ const DATA = [
       "猎奇风味党"
     ],
     "type": "adventure",
-    "price": "¥56.4"
+    "price": "¥56.4",
+    "selfUse": false
   },
   {
     "country": "俄罗斯",
@@ -897,7 +944,8 @@ const DATA = [
       "名庄珍稀豆收藏党"
     ],
     "type": "rare",
-    "price": "¥73"
+    "price": "¥73",
+    "selfUse": false
   },
   {
     "country": "俄罗斯",
@@ -912,7 +960,8 @@ const DATA = [
       "坚果风味党"
     ],
     "type": "adventure",
-    "price": "¥81.3"
+    "price": "¥81.3",
+    "selfUse": false
   },
   {
     "country": "秘鲁",
@@ -928,7 +977,8 @@ const DATA = [
       "单一产地控"
     ],
     "type": "classic",
-    "price": "¥74.87"
+    "price": "¥74.87",
+    "selfUse": true
   },
   {
     "country": "秘鲁",
@@ -943,7 +993,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥74.87"
+    "price": "¥74.87",
+    "selfUse": true
   },
   {
     "country": "秘鲁",
@@ -958,7 +1009,8 @@ const DATA = [
       "口感控"
     ],
     "type": "classic",
-    "price": "¥61.74"
+    "price": "¥61.74",
+    "selfUse": true
   },
   {
     "country": "加拿大",
@@ -973,7 +1025,8 @@ const DATA = [
       "发酵实验党"
     ],
     "type": "boozy",
-    "price": "¥130.16"
+    "price": "¥130.16",
+    "selfUse": false
   },
   {
     "country": "加拿大",
@@ -988,7 +1041,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥191.06"
+    "price": "¥191.06",
+    "selfUse": false
   },
   {
     "country": "意大利",
@@ -1003,7 +1057,8 @@ const DATA = [
       "酒心巧克力爱好者"
     ],
     "type": "boozy",
-    "price": "¥16.03"
+    "price": "¥16.03",
+    "selfUse": false
   },
   {
     "country": "意大利",
@@ -1018,7 +1073,8 @@ const DATA = [
       "创意形式猎奇党"
     ],
     "type": "adventure",
-    "price": "¥98.6"
+    "price": "¥98.6",
+    "selfUse": false
   },
   {
     "country": "意大利",
@@ -1033,22 +1089,8 @@ const DATA = [
       "名庄珍稀豆收藏党"
     ],
     "type": "rare",
-    "price": "¥113.99"
-  },
-  {
-    "country": "比利时",
-    "countryTag": "BE",
-    "brand": "Callebaut 嘉利宝",
-    "product": "80% 黑巧克力 500g（烘焙用）",
-    "origin": "比利时工坊调配，非单一产地",
-    "pct": "80%",
-    "flavor": "专业烘焙用的黑巧克力豆，直径约 1.3cm 方便融化，性价比高，是自制甜点的基础原料。",
-    "who": "烘焙 / 自制甜点党 —— 想自己做熔岩蛋糕、甘纳许的人。",
-    "tags": [
-      "烘焙自制党"
-    ],
-    "type": "raw",
-    "price": "¥101.26"
+    "price": "¥113.99",
+    "selfUse": false
   },
   {
     "country": "匈牙利",
@@ -1063,7 +1105,8 @@ const DATA = [
       "单源产地控"
     ],
     "type": "classic",
-    "price": "¥59.74"
+    "price": "¥59.74",
+    "selfUse": false
   },
   {
     "country": "美国",
@@ -1078,7 +1121,8 @@ const DATA = [
       "名庄珍稀豆收藏党"
     ],
     "type": "rare",
-    "price": "¥130.84"
+    "price": "¥130.84",
+    "selfUse": false
   },
   {
     "country": "墨西哥",
@@ -1093,7 +1137,8 @@ const DATA = [
       "咸甜复合风味党"
     ],
     "type": "adventure",
-    "price": "¥41.31"
+    "price": "¥41.31",
+    "selfUse": false
   },
   {
     "country": "奥地利",
@@ -1108,7 +1153,8 @@ const DATA = [
       "酒心巧克力爱好者"
     ],
     "type": "boozy",
-    "price": "¥77.4"
+    "price": "¥77.4",
+    "selfUse": false
   },
   {
     "country": "奥地利",
@@ -1123,7 +1169,8 @@ const DATA = [
       "酒心巧克力爱好者"
     ],
     "type": "boozy",
-    "price": "¥77.4"
+    "price": "¥77.4",
+    "selfUse": false
   },
   {
     "country": "瑞典",
@@ -1138,7 +1185,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥86.2"
+    "price": "¥86.2",
+    "selfUse": false
   },
   {
     "country": "瑞典",
@@ -1153,7 +1201,8 @@ const DATA = [
       "果酸党"
     ],
     "type": "classic",
-    "price": "¥82.49"
+    "price": "¥82.49",
+    "selfUse": false
   },
   {
     "country": "瑞典",
@@ -1168,7 +1217,8 @@ const DATA = [
       "地域限定风味猎奇党"
     ],
     "type": "adventure",
-    "price": "¥97.51"
+    "price": "¥97.51",
+    "selfUse": false
   },
   {
     "country": "瑞典",
@@ -1183,7 +1233,8 @@ const DATA = [
       "发酵实验党"
     ],
     "type": "boozy",
-    "price": "¥88.65"
+    "price": "¥88.65",
+    "selfUse": true
   },
   {
     "country": "瑞典",
@@ -1198,7 +1249,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥88.65"
+    "price": "¥88.65",
+    "selfUse": false
   },
   {
     "country": "意大利",
@@ -1214,53 +1266,8 @@ const DATA = [
       "送礼首选"
     ],
     "type": "rare",
-    "price": "¥126"
-  },
-  {
-    "country": "中国",
-    "countryTag": "CN",
-    "brand": "慧德可可",
-    "product": "纯脂可可白脱（单一产地纯粹）1kg",
-    "origin": "马达加斯加单一产地",
-    "pct": "无糖度标注",
-    "flavor": "纯可可脂（可可白脱），无添加，是自制巧克力、护肤品或烘焙的基础原料而非成品巧克力。",
-    "who": "自制巧克力 / 烘焙原料党 —— 想从可可脂开始自己调配巧克力的硬核玩家。",
-    "tags": [
-      "自制原料党"
-    ],
-    "type": "raw",
-    "price": "¥279"
-  },
-  {
-    "country": "中国",
-    "countryTag": "CN",
-    "brand": "慧德可可",
-    "product": "巴布亚新几内亚 / 委内瑞拉可可生豆 250g",
-    "origin": "巴布亚新几内亚 + 委内瑞拉",
-    "pct": "生豆",
-    "flavor": "未经烘焙的可可生豆，需要自己完成烘豆、脱壳、研磨等步骤，是从零开始做巧克力的起点。",
-    "who": "自制巧克力硬核党 —— 想体验从生豆到成品全流程的人。",
-    "tags": [
-      "自制原料党"
-    ],
-    "type": "raw",
-    "price": "¥64.1"
-  },
-  {
-    "country": "中国",
-    "countryTag": "CN",
-    "brand": "慧德可可",
-    "product": "马达加斯加生可可豆碎仁（烘焙）1000g",
-    "origin": "马达加斯加",
-    "pct": "碎仁",
-    "flavor": "已经烘焙好的可可碎仁（nibs），可以直接当零食嚼着吃，也可以用来研磨成巧克力浆。",
-    "who": "自制原料党 / 健康零食党 —— 也可以单纯当无糖零食嚼。",
-    "tags": [
-      "自制原料党",
-      "无糖健康党"
-    ],
-    "type": "raw",
-    "price": "¥137"
+    "price": "¥126",
+    "selfUse": false
   },
   {
     "country": "法国",
@@ -1276,7 +1283,8 @@ const DATA = [
       "送礼首选"
     ],
     "type": "rare",
-    "price": "¥113.37"
+    "price": "¥113.37",
+    "selfUse": false
   },
   {
     "country": "日本",
@@ -1291,7 +1299,8 @@ const DATA = [
       "日式精工爱好者"
     ],
     "type": "classic",
-    "price": "¥155.22"
+    "price": "¥155.22",
+    "selfUse": false
   },
   {
     "country": "日本",
@@ -1306,7 +1315,8 @@ const DATA = [
       "和风口味猎奇党"
     ],
     "type": "adventure",
-    "price": "¥186.25"
+    "price": "¥186.25",
+    "selfUse": false
   },
   {
     "country": "日本",
@@ -1321,7 +1331,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥174.03"
+    "price": "¥174.03",
+    "selfUse": false
   },
   {
     "country": "日本",
@@ -1336,7 +1347,8 @@ const DATA = [
       "单一产地对比党"
     ],
     "type": "classic",
-    "price": "¥175"
+    "price": "¥175",
+    "selfUse": true
   },
   {
     "country": "日本",
@@ -1352,7 +1364,8 @@ const DATA = [
       "限定款收藏党"
     ],
     "type": "adventure",
-    "price": "¥195"
+    "price": "¥195",
+    "selfUse": true
   },
   {
     "country": "挪威",
@@ -1367,7 +1380,8 @@ const DATA = [
       "硬核黑巧爱好者"
     ],
     "type": "classic",
-    "price": "¥79.72"
+    "price": "¥79.72",
+    "selfUse": false
   },
   {
     "country": "挪威",
@@ -1382,7 +1396,8 @@ const DATA = [
       "猎奇创新风味党"
     ],
     "type": "adventure",
-    "price": "¥188"
+    "price": "¥188",
+    "selfUse": false
   },
   {
     "country": "韩国",
@@ -1397,29 +1412,15 @@ const DATA = [
       "日常口粮党"
     ],
     "type": "classic",
-    "price": "¥20.8"
+    "price": "¥20.8",
+    "selfUse": false
   },
   {
-    "country": "日本",
-    "countryTag": "JP",
-    "brand": "Pocky（格力高）",
-    "product": "薄荷巧克力味 Pocky（2袋装）",
-    "origin": "日本工厂调配，非精品巧克力",
-    "pct": "薄荷味",
-    "flavor": "经典日式饼干棒零食，薄荷的清凉感和巧克力涂层搭配，属于轻松解馋的日常小零食。",
-    "who": "轻松零食党 —— 不追求「精品」、只想吃点轻松小零食的人。",
-    "tags": [
-      "轻松零食党"
-    ],
-    "type": "adventure",
-    "price": "¥22.8"
-  },
-  {
-    "country": "待确认",
-    "countryTag": "??",
+    "country": "中国",
+    "countryTag": "CN",
     "brand": "Kessho 珂珂琥",
     "product": "黑巧克力牛奶获奖款（青梅黑巧+正山小种黑巧）",
-    "origin": "产地信息未在订单中标注",
+    "origin": "中国本土工坊（品牌为中国自有品牌）",
     "pct": "30g+30g",
     "flavor": "青梅风味黑巧与正山小种茶香黑巧的组合装，果酸与茶香两种方向都照顾到了，适合喜欢尝新的人。",
     "who": "茶香 / 果味风味探索党 —— 喜欢在巧克力里找到茶或水果调性的人。",
@@ -1427,16 +1428,17 @@ const DATA = [
       "茶香果味探索党"
     ],
     "type": "adventure",
-    "price": "¥103"
+    "price": "¥103",
+    "selfUse": true
   }
 ];
 
 const typeMeta = {
+  "self": "设计师甄选",
   "classic": "经典黑巧 / 单一产地控",
   "adventure": "猎奇风味探索者",
   "dairy": "乳制品 / 白巧党",
   "rare": "名庄珍稀豆收藏党",
-  "raw": "生豆 / 烘焙原料党",
   "boozy": "酒心 / 发酵实验党"
 };
 
@@ -1489,7 +1491,10 @@ function renderChips(){
 function renderGrid(){
   const filtered = DATA.filter(d=>{
     const cOk = activeCountry === "全部" || d.country === activeCountry;
-    const tOk = activeType === "全部" || d.type === activeType;
+    let tOk;
+    if(activeType === "全部") tOk = true;
+    else if(activeType === "self") tOk = !!d.selfUse;
+    else tOk = d.type === activeType;
     return cOk && tOk;
   });
 
@@ -1508,6 +1513,7 @@ function renderGrid(){
 
   grid.innerHTML = filtered.map((d) => `
     <div class="card type-${d.type}" data-idx="${DATA.indexOf(d)}">
+      ${d.selfUse ? '<div class="self-badge" title="设计师甄选">⭐</div>' : ''}
       <div class="pct-stamp">${d.pct}</div>
       <div class="country-tag">${d.countryTag} · ${d.country}</div>
       <div class="brand">${d.brand}</div>
@@ -1531,7 +1537,8 @@ function openSheet(d){
   document.getElementById('sFlavor').textContent = d.flavor;
   document.getElementById('sWho').textContent = d.who;
   document.getElementById('sPrice').textContent = d.price;
-  document.getElementById('sTags').innerHTML = d.tags.map(t=>`<span class="tag">${t}</span>`).join('');
+  const tagList = d.selfUse ? [...d.tags, "⭐ 设计师甄选"] : d.tags;
+  document.getElementById('sTags').innerHTML = tagList.map(t=>`<span class="tag">${t}</span>`).join('');
   document.getElementById('overlay').classList.add('show');
 }
 
